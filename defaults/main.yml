@@ -1,0 +1,5 @@
+---
+githubmfachecker_user: www-data
+githubmfachecker_install_directory: /data/www/
+githubmfachecker_install_name: github-mfa-checker
+githubmfachecker_path: "{{ githubmfachecker_install_directory }}{{ githubmfachecker_install_name }}"

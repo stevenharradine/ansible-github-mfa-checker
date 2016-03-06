@@ -1,0 +1,13 @@
+---
+dependencies: []
+galaxy_info:
+  author: "Steven Harradine"
+  description: "Checks all admin users of a github org have their 2 factor authentication enabled."
+  license: "ISC"
+  platforms:
+    - name: "Ubuntu"
+      versions:
+        - all
+  categories:
+    - "system"
+    - "automation"

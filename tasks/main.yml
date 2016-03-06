@@ -1,0 +1,13 @@
+---
+- name: clone Github webhooks | git
+  git:
+    repo: "https://github.com/stevenharradine/github-mfa-checker.git"
+    dest: "{{ githubmfachecker_path }}"
+    update: yes
+    force: yes
+
+- name: copy configuration
+  template:
+    src: templates/config.js
+    dest: "{{ githubmfachecker_path }}/config.js"
+    mode: 0644
