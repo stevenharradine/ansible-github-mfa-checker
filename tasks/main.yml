@@ -6,6 +6,10 @@
     update: yes
     force: yes
 
+- name: install | npm
+  npm:
+    path: "{{ githubmfachecker_path }}"
+
 - name: copy configuration
   template:
     src: templates/config.js
