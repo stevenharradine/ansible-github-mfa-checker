@@ -14,7 +14,7 @@
 
 - name: set cron jobs
   cron:
-    name: "cron for {{ item }}"
+    name: "cron for github mfa checker"
     user: "{{ githubmfachecker_user }}"
     special_time: daily
     job: "node {{ githubmfachecker_path }}/github-mfa-checker.js"
