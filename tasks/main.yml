@@ -1,7 +1,7 @@
 ---
-- name: clone Github webhooks | git
+- name: clone Github MFA Checker | git
   git:
-    repo: "https://github.com/stevenharradine/github-mfa-checker.git"
+    repo: "https://github.com/telusdigital/github-mfa-checker.git"
     dest: "{{ githubmfachecker_path }}"
     update: yes
     force: yes
